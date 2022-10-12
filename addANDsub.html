@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Programming for beginners
+    </title>
+    <script type="text/javascript">
+        function Addition() {
+            var x, y, z;
+            x = parseInt(document.getElementById("first").value)
+            y = parseInt(document.getElementById("second").value)
+            z = x + y
+            document.getElementById("sum").value = z
+        }
+        function Subtraction() {
+            var x, y, z;
+            x = parseInt(document.getElementById("third").value)
+            y = parseInt(document.getElementById("fourth").value)
+            z = x - y
+            document.getElementById("sub").value = z
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align="left" style="color:red">
+        JAVASCRIPT AND HTML
+    </h1>
+    <h2>
+        BASIC OPERATIONS
+    </h2>
+    <h3 align="left">
+        ADDITION :
+    </h3>
+    <p>
+        ENTER FIRST NUMBER <input id="first">
+    </p>
+    <p>
+        ENTER SECOND NUMBER <input id="second">
+    </p>
+    <button onclick="Addition()">add</button>
+    <p>
+        SUM = <input id="sum">
+    </p>
+    <h3 align="left">
+        SUBTRACTION :
+    </h3>
+    <p>
+        ENTER FIRST NUMBER <input id="third">
+    </p>
+    <p>
+        ENTER SECOND NUMBER <input id="fourth">
+    </p>
+    <button onclick="Subtraction()">sub</button>
+    <p>
+        DIFFERENCE = <input id="sub">
+    </p>
+</body>
+
+</html>
